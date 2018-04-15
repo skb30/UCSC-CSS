@@ -1,0 +1,39 @@
+h1 {
+  color:#006600;
+  font-family:Impact
+}
+p em {
+  font-family:Verdana;
+  color:#6e6e6e; /* green */
+}
+h2, h3 {
+  color:#3a3a3a; /* light gray */
+  font-family:cursive;
+}
+
+/* example of descendent Selectors */
+p em{
+  color:blue;
+  font-weight: bold;
+}
+
+a {
+  text-decoration:none;  /* removes underlines for all link states */
+}
+/* examples of the Pseudo-Class Selectors */
+a:link {
+  color:#660000;
+}
+
+a:visited {
+  color:#990066;
+}
+a:hover, a:focus {
+  color:#ffffff; /* black */
+  background-color:#000000; /* white */
+}
+
+a:active {
+  color:#ffff00;
+  background-color:#000099;
+}
