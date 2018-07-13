@@ -1,0 +1,50 @@
+
+
+/* Contorls page layout - width and margin for paper */
+#wrapper #header, #content {
+    width:auto;
+    margin:0;
+    padding:0;
+}
+body {
+    color:#000 !important;
+}
+h1 {
+    font-size:30pt !important;
+}
+
+h2 {
+    font-size:16pt !important;
+}
+
+h3 {
+    font-size:14pt !important;
+}
+
+/* controlling page breaks */
+/*
+h4 {
+    page-break-before: always;
+}
+*/
+p {
+  font-size:11pt !important;
+}
+
+/* don't print the image. Too costly. */
+img{
+    display: none;
+}
+
+
+/*  used to display the printed url */
+a:after {
+      content: "(" attr(href) ")";
+      color:#ccc;
+      font-size: 80%;
+}
+
+.vertical p {
+    display: none;
+}
+

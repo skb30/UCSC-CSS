@@ -1,0 +1,82 @@
+
+/* example of descendent Selectors */
+p em{
+  color:blue;
+  font-weight: bold;
+}
+.special {
+
+  /* shorthand (width, style, color) */
+  border: 1px double #000;
+
+  /* shorthand for both padding and margin using TRBL */
+  padding: 25px 25px 25px 150px;
+  margin: 30px 200px 30px 30px;
+
+  /* shorthand for background */
+  background:#ccf url(images/rosemedium.gif) no-repeat
+
+}
+/* example of the class selector */
+.first{color:#006600} /* green */
+.second{color:blue} /* purple */
+.third{color:#990000} /* red */
+.cursive {font-family: cursive;}
+a {
+  text-decoration:none;  /* removes underlines for all link states */
+  word-spacing:2em;
+}
+/* examples of the Pseudo-Class Selectors */
+a:link {
+  color:#990066;
+}
+
+a:visited {
+  color:#990066;
+}
+a:hover, a:focus {
+  color:#ffff00; /* black */
+  background-color:#000000; /* white */
+}
+
+a:active {
+  color:#ffffff;
+  background-color:#000099;
+
+}
+
+body {  /* styles to be inherited */
+  /* color: #3a3a3a; */
+  color: #000;
+  background-color:  #fff;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+}
+h1 {
+
+   color: #3372df;
+  /* can't use shorthand here because I'm not using font-family */
+  font-weight: 700; /* bold */
+  font-style: italic;
+  font-variant: small-caps;  /* using font-variant */
+  text-align: center;
+}
+
+h2 {
+  color: #000000;
+  text-transform: capitalize;  /* capitalize each word */
+  word-spacing:.05em; /* space the words just a litter more */
+}
+
+h3 {
+  color: #000000;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+
+}
+p {
+    /* using shorthand */
+    font:125%/1.5 lighter Papyrus, fantasy;
+    text-indent: 1em;
+
+}

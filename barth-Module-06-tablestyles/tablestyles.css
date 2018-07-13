@@ -1,0 +1,9 @@
+
+
+/* attribute selectors */
+
+a[href$=".pdf"] {
+    padding: 0 16px 0 0;
+    background:url("images/attribute-icons/pdficon-small.gif");
+
+}

@@ -1,0 +1,62 @@
+
+body {
+    font: 100% Verdana, sans-serif;
+    color:#000;
+    background:#fff;
+}
+
+p {
+    font-size:.8em;
+    line-height:1.5em;
+}
+
+img {
+    float:left;
+    padding-right: 1em;
+
+}
+#content p {
+    font-family: Consolas, monaco, monospace;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+
+}
+#wrapper {
+    width: 760px;
+    margin:0 auto;
+}
+
+#footer p {
+   font:80% italic sans-serif;
+   text-align: center;
+}
+
+
+#footer a {
+      text-decoration:none;
+      color:#666
+}
+
+#footer a:link {
+
+    color:#600;
+}
+
+#footer a:visited {
+      color:#633;
+}
+
+#footer a:hover, #footer a:focus {
+      text-decoration: underline;
+      color: #c9c;
+
+}
+
+#footer a:active {
+    color:#c9c;
+}
+
+

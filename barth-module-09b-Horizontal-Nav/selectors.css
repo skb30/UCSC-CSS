@@ -1,0 +1,168 @@
+
+/* example of descendent Selectors */
+p em{
+  color:blue;
+  font-weight: bold;
+}
+.special {
+  border-color: #000;
+  border-width: 1px;
+  border-style:double;
+  /* border-bottom-style: solid; */
+  /* border-top-style: solid; */
+  background-color: #ccf;
+  padding: 25px;
+  padding-left: 150px;
+  margin: 30px;
+  margin-right: 200px;
+  /* background-image: url(../images/Large_Rose_Images/Calpoly_large.jpgredroseT.gif); */
+  /* background-image: url(../images/Large_Rose_Images/Love-Knot_Large.jpg); */
+  background-image: url(images/rosemedium.gif);
+  background-repeat: no-repeat;
+}
+/* example of the class selector */
+.first{color:#006600} /* green */
+.second{color:blue} /* purple */
+.third{color:#990000} /* red */
+.cursive {font-family: cursive;}
+a {
+  text-decoration:none;  /* removes underlines for all link states */
+  word-spacing:2em;
+}
+/* examples of the Pseudo-Class Selectors */
+a:link {
+  color:#a89215;
+}
+a:visited {
+  color:#990066;
+}
+a:hover, a:focus {
+  color:#1583a8; /* black */
+  background-color:#000000; /* white */
+}
+a:active {
+  color:#ffffff;
+  background-color:#000099;
+}
+#nav {
+    color: #000;
+    background: #036;         
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+}
+#navlist {
+    margin-left: 2px;
+    padding: 5px 10px 5px 5px;
+    list-style: none;
+     
+}
+/*
+Remember that the <li> element is a block-level element meaning each time
+a new <li> is written, the content is placed on a new line with spacing
+before and after the element content (can you name other block-level
+elements?).  Block-level elements have width and height that can be
+manually overridden, whereas an inline-element, the width and height are
+determined by the content of the element, and therefore cannot be manually
+overridden. We were first introduced to the display property we made the
+print.css file using the value of none. We also used it for the vertical
+navigation to convert an anchor link from an inline to a block level
+element.
+*/ 
+#nav li {
+    display:inline;
+    padding-right:20px;
+    }
+    
+#nav ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+ /*
+    Regarding that margin-left:-4px; what’s happening here is that we have
+    a block-level elements and the HTML code means that it starts a new
+    line of code. The browser interprets this kind of like a “return” or
+    as a simple space between a word and another or in this case for the
+    list elements. When you change the display to inline, that “space”
+    is still recognized.  One method that is used to get rid of this
+    space is using margin-left:-4px; This technique will work on all
+    browsers and will validate.
+    Tip: In some browsers, the <ul> uses margin and in some browsers, it uses
+    padding.... Thus, you should always zero both margin and
+    padding (or explicitly set them) to get all your defaults evened out.
+    There are more techniques using other CSS properties, but with the
+    knowledge we have thus far, we can create some very nice looking
+    navigational elements!
+    */
+#nav ul li {
+    display: inline;
+    margin-left: -4px;
+}
+#nav ul li a {
+    padding: 5px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+#nav ul li a:hover, #nav ul li a:focus {
+    background:#369;
+    color: #fff
+}
+#active a {
+    border-left: 1px solid #fff;
+    background:url(images/arrow.gif) no-repeat 0 center;
+}
+#navlist li   {
+     padding-left: 20px;
+     border-bottom: 1px solid #ccc;
+     background-position: 0.1em;
+     background: url(images/arrow.gif) no-repeat 0.1em;
+     background-repeat: no-repeat;
+}
+#navlist a:hover {
+     background: #ccc;
+}
+#navlist li a {
+     display:block;
+}
+body {  /* styles to be inherited */
+  /* color: #3a3a3a; */
+  color: #000;
+  background-color:  #fff;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  /* background-image:url(images/me-tahoe.jpg),
+                  url(images/sparky-ball.jpeg);
+  background-repeat:no-repeat, repeat;
+  background-position: 90% 4%, 0 0;
+  background-size:10em 10em, cover ;
+  background-attachment:fixed, fixed; */
+}
+h1 {
+  color: #3372df;
+  font-size:2.0em; /* using browser friendly em's */
+  font-weight: 700; /* bold */
+  font-style: italic;
+  font-variant: small-caps;  /* using font-variant */
+  text-align: center;
+}
+h2 {
+  color: #000000;
+  text-transform: capitalize;  /* capitalize each word */
+  word-spacing:.05em; /* space the words just a litter more */
+}
+h3 {
+  color: #000000;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+}
+p {
+	font-family: Papyrus, fantasy;
+	font-size:125%; /* using percentage to make font bigger than 16px */
+  line-height:1.5; /* increase the line high w/o using unit of measure */
+	font-weight: lighter;
+  text-indent: 1em;
+}

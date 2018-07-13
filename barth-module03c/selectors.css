@@ -1,0 +1,73 @@
+
+/* example of descendent Selectors */
+p em{
+  color:blue;
+  font-weight: bold;
+}
+
+/* example of the class selector */
+.first{color:#006600} /* green */
+.second{color:blue} /* purple */
+.third{color:#990000} /* red */
+.cursive {font-family: cursive;}
+a {
+  text-decoration:none;  /* removes underlines for all link states */
+  word-spacing:2em;
+}
+/* examples of the Pseudo-Class Selectors */
+a:link {
+  color:#660000;
+}
+
+a:visited {
+  color:#990066;
+}
+a:hover, a:focus {
+  color:#ffffff; /* black */
+  background-color:#000000; /* white */
+}
+
+a:active {
+  color:#ffff00;
+  background-color:#000099;
+
+}
+
+body {  /* styles to be inherited */
+  color: #3a3a3a;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background-image:url(../images/bkgrds/puppy600.jpg);
+  background-repeat:no-repeat;
+  /* background-position: 90% 5%; */
+  background-position: 90% 5%;
+  background-color: #f4f5f9; /* off white background */
+  background-size:cover;
+  ba
+}
+h1 {
+
+  color: #3372df;
+  font-size:2.0em; /* using browser friendly em's */
+  font-weight: 700; /* bold */
+  font-style: italic;
+  font-variant: small-caps;  /* using font-variant */
+  text-align: center;
+}
+
+h2 {
+  text-transform: capitalize;  /* capitalize each word */
+  word-spacing:.05em; /* space the words just a litter more */
+}
+
+h3 {
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  text-decoration: underline;
+}
+p {
+	font-family: Papyrus, fantasy;
+	font-size:125%; /* using percentage to make font bigger than 16px */
+  line-height:1.5; /* increase the line high w/o using unit of measure */
+	font-weight: lighter;
+  text-indent: 1em;
+}

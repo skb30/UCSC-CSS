@@ -1,0 +1,80 @@
+body {
+  font:.8em/1.5em Verdana, Arial, Helvetica, sans-serif;
+  color:#000;
+  background:#996;
+  margin:0;
+  padding:0;
+  text-align:center; /* only necessary if user is on Win7 using IE8!! */
+}
+/*
+Because we are centering this wrapper div it must have a width otherwise it will be 100% as
+wide as its parent, the body element. The margin set to auto, forces the wrapper to center
+in the window.  And lastly, because we had to fix IE 8 issues by centering the text, we need to
+come back and align the text back to left.
+*/
+#wrapper {
+  width: 760px;
+  text-align: left;
+  margin: 0 auto;
+  width: 760px;
+  background: #fff url(images/faux.gif) repeat-y;
+}
+#header {
+    background:#dccbac url(images/dec_top.gif) no-repeat bottom right;
+}
+/*
+We want the header to be the same width as the wrapper so we don’t need to define this
+again – it will be the same width as its parent: #wrapper.  However, we do want to style
+the <h1> tag and fix the padding so the background fits nicely around it.  Add this to the tag
+*/
+#header h1 {
+    font: 2.2em Georgia, "Times New Roman", Times, serif;
+    color: #333;
+    margin:0;
+    padding: 20px 10px;
+}
+/* Next, let’s float that navigation */
+/* The nav div will sit next to the content because it is given a width of
+140px (140 pixels + 20 pixels padding = 160 pixels) and the content div is given a margin that
+clears the width. It is good to give the margin values at least 3-5 pixels more than they seem to
+need because of IE for Windows adds a phantom 3 pixels to the value! */
+#nav {
+    width: 140px;
+    float: left;
+    padding: 15px 10px;
+}
+/* add styling to the content */
+#content {
+  margin: 0 165px;
+  padding: 15px;
+  border-left: thin solid #ccc;
+}
+#footer {
+  padding: 10px;
+  background:#fff;
+  border-top:1px solid #ccc;
+  color:#999;
+  font-size:.7em;
+}
+#nav ul li {
+    list-style:none;
+    line-height:1.7em;
+}
+#nav a:link {
+    color: #030; /* dark green */
+    text-decoration:none;
+}
+#nav a:hover, #nav a:focus, #nav a:active {
+    color:#600;  /* dark red */
+    text-decoration:none;
+}
+#sidebar {
+  background:#877D6C;
+  width: 144px;
+  float: right;
+  padding: 15px 8px 8px 8px;
+  margin: 0px;
+}
+#sidebar p{
+    color:#fff;
+}

@@ -1,0 +1,48 @@
+/*
+    Relative positioning is similar to static positioning in that elements to which relative
+    positioning is applied do not leave the document flow.  There are three differences between
+    relative and static positioning.  1) Elements with a relative position can be used as a point of
+    reference for elements nested within them that are absolutely positioned.  2) The position of a
+    relatively positioned element can be adjusted using the offset properties, and 3) a relatively
+    positioned element can have a position on the z-axis.
+*/
+
+/*
+
+    By nesting the div tags inside a parent that has a relative position, each child div is
+    positioned relative to the parent position.
+*/
+
+#header {
+  background-color: #fff;
+  padding: 8px 0;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+#wrapper {
+	position:relative;
+	width:40em;
+	margin:4em auto;
+	border:1px solid #999;
+}
+
+#threeLeaves {
+	position: absolute;
+	width: 126px; /* width of image */
+	height: 89px; /* height of image */
+	left: 52px;
+	top: -62px;
+	background: url(threeLeaves.gif) no-repeat;
+}
+#leaves {
+	position:absolute;
+	width:130px;  /* width of image */
+	height:73px;  /* height of image */
+	left: -77px;
+	top: 51px;
+	background: url(OneLeaf.gif) no-repeat;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Positioning</title>
+<style type="text/css">
+#wrapper {
+	position:relative;
+	width:40em;
+	margin:4em auto;
+	border:1px solid #999;
+}
+
+#threeLeaves {
+	position: absolute;
+	width: 126px; /* width of image */
+	height: 89px; /* height of image */
+	left: 52px;
+	top: -62px;
+	background: url(threeLeaves.gif) no-repeat;
+}
+#leaves {
+	position:absolute;
+	width:130px;  /* width of image */
+	height:73px;  /* height of image */
+	left: -77px;
+	top: 51px;
+	background: url(OneLeaf.gif) no-repeat;
+}
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="leaves"></div>
+	<div id="threeLeaves"></div>
+<div id="header">
+	<h1> Some header goes here </h1>
+	
+</div> <!-- closes #header -->
+<div id="nav">
+<ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+ </div> <!-- end #nav -->
+ 
+<div id="content">
+<p>Sed gravida, turpis eu congue lacinia, metus mi imperdiet sem, id venenatis turpis velit eu urna. Aliquam erat volutpat. Sed ullamcorper dui in ligula. Fusce tempus eros ac augue. Mauris ac sapien non sem dictum egestas. Donec ultricies, libero ac pretium tincidunt, diam diam vulputate mauris, et commodo metus libero non mauris. Aenean bibendum.</p>
+
+<img src="../small_rose/AngelDarling_T.jpg" alt="" />
+
+<p>Maecenas viverra, purus eget viverra aliquet, leo eros feugiat ligula, nec egestas leo pede non pede. Quisque eros nunc, interdum in, congue a, sollicitudin nec, turpis. Proin dictum suscipit lectus. Nullam lacus orci, laoreet non, fringilla a, accumsan vel, enim.</p>
+</div>
+
+</div> <!-- ends wrapper -->
+</body>
+</html>

@@ -1,0 +1,271 @@
+
+table {
+
+    text-align:left;
+    /* collapse the gaps between columns */
+    border-collapse:collapse;  /* not supported by IE6  */
+    border:1px solid #999;
+
+}
+
+/* style the caption tag */
+
+caption {
+
+    font-size: 1.2em;
+    font-weight: bold;
+    font-variant:small-caps;
+    letter-spacing:.2em;
+    text-align:left;
+    /*
+    caption-side: bottom;
+    padding: 0;
+    */
+
+}
+
+tfoot {
+    font-size: .7em;
+    color:#686;
+    font-style:italic;
+    text-align:right;
+}
+th, td { /* table cell padding */
+    padding:10px;
+    border-bottom: 1px solid #333;
+    font-size:.875em;
+}
+
+tr {
+   vertical-align:baseline;
+}
+
+th {
+   background: silver;
+   font-size:1em;
+}
+
+tr:nth-of-type(odd) {
+    background: lightyellow;
+}
+tr:nth-of-type(even) {
+    background: lightblue;
+}
+/* Column Styles */
+.group {
+    width:600px; /* divde into even column widths during resize */
+}
+
+
+/* add psuedo to tr in the last class (group them) */
+.last, tr:hover .last {
+
+    background:#fff;
+    padding:0;
+    color:#686;
+    border:1px solid #fff;
+}
+.first {width:80px;}
+.love {background:#f33;}
+.angel {background:#fcf;}
+.calPoly {background:#ffc;}
+
+
+/* pseudo  classes */
+tr:hover {
+
+    background:#696;
+    color: #fff;
+}
+/* attributes selectors */
+a[href$=".pdf"] {
+    padding: 0 20px 0 0;
+    background:url("images/attribicons/pdficon_small.gif")
+    no-repeat top right;
+
+}a[href$=".doc"] {
+    padding: 0 25px 0 0;
+    background:url("images/attribicons/MSWord_icon.gif")
+    no-repeat top right;
+
+}a[href^="mailto:"] {
+    padding: 0 25px 0 0;
+    background:url("images/attribicons/mini_icons2/mail.gif")
+    no-repeat top right;
+
+}a[href^="https:"] {
+    padding: 0 15px 0px 0;
+    background:url("images/attribicons/outboundlink.jpg")
+    no-repeat top right;
+
+}
+body {
+  font:.8em/1.5em Verdana, Arial, Helvetica, sans-serif;
+  color:#000;
+  background:#996;
+  margin:0;
+  padding:0;
+  text-align:center; /* only necessary if user is on Win7 using IE8!! */
+}
+#header {
+  background-color: #fff;
+  padding: 8px 0px 0px 150px;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+#wrapper {
+	position:relative;
+	width:40em;
+	margin:4em auto;
+	border:1px solid #999;
+}
+
+#threeLeaves {
+	position: absolute;
+	width: 126px; /* width of image */
+	height: 89px; /* height of image */
+	right: 180px;
+	top: 0px;
+	background: url(images/threeLeaves.gif) no-repeat;
+}
+#leaves {
+	position:absolute;
+	width:130px;  /* width of image */
+	height:73px;  /* height of image */
+	left: 180px;
+	top: 51px;
+	background: url(images/OneLeaf.gif) no-repeat;
+}
+/*
+Because we are centering this wrapper div it must have a width otherwise it will be 100% as
+wide as its parent, the body element. The margin set to auto, forces the wrapper to center
+in the window.  And lastly, because we had to fix IE 8 issues by centering the text, we need to
+come back and align the text back to left.
+*/
+#wrapper {
+  width: 760px;
+  text-align: left;
+  margin: 0 auto;
+  width: 760px;
+  background: #fff url(images/faux.gif) repeat-y;
+}
+/*
+#header {
+    background:#dccbac url(images/dec_top.gif) no-repeat bottom right;
+}
+*/
+/*
+We want the header to be the same width as the wrapper so we don’t need to define this
+again – it will be the same width as its parent: #wrapper.  However, we do want to style
+the <h1> tag and fix the padding so the background fits nicely around it.  Add this to the tag
+*/
+#header h1 {
+    font: 1.2em Georgia, "Times New Roman", Times, serif;
+    color: #333;
+    padding: 20px 10px;
+
+
+}
+/* Next, let’s float that navigation */
+/* The nav div will sit next to the content because it is given a width of
+140px (140 pixels + 20 pixels padding = 160 pixels) and the content div is given a margin that
+clears the width. It is good to give the margin values at least 3-5 pixels more than they seem to
+need because of IE for Windows adds a phantom 3 pixels to the value! */
+#nav {
+    width: 140px;
+    float: left;
+    padding: 15px 10px;
+}
+/* add styling to the content */
+#content {
+  margin: 0 165px;
+  padding: 15px;
+  border-left: thin solid #ccc;
+}
+/* Descendent Selector */
+#content h1 {
+    font: 2.2em Georgia, "Times New Roman", Times, serif;
+}
+#footer {
+  padding: 10px;
+  background:#fff;
+  border-top:1px solid #ccc;
+  color:#999;
+  font-size:.7em;
+}
+/*
+    Let's say you want all bold text to be red but only if that bold text occurs in regular <p>
+    body text.  You can do this by using descendent selectors. These are selectors that demand
+    that a certain situation be true in order for their declarations to be carried out.  A
+    descendant selector is made up of two or more selectors separated by white space.
+*/
+#nav ul li {
+    list-style:none;
+    line-height:1.7em;
+}
+
+/* pseudo-class selectors */
+
+/*
+    Pseudo-classes are most commonly used for styling navigation elements such as the <a> element.
+    By default, any link on your page will be blue for a regular link, purple if the link has been
+    visited and red if the link is active and all will be underlined. These browser default colors
+    may not work with your color scheme of your web site. Thus we can use CSS to control how our
+    links will look.
+*/
+#nav a:link {
+    color: blue; /* dark green */
+    text-decoration:none;
+}
+#nav a:hover, #nav a:focus, #nav a:active {
+    color:#600;  /* dark red */
+    text-decoration:none;
+}
+#sidebar {
+  background:#877D6C;
+  width: 144px;
+  float: right;
+  padding: 15px 8px 8px 8px;
+  margin: 0px;
+}
+/* id selector */
+#sidebar p, h3 {
+    color:#d5dbe5;
+}
+
+#table-style{
+    padding-top: 20px;
+}
+/* Floating images within text */
+/*
+    You will see in the content section that there are two images with some text within their very
+    own div tag. We want to not only float the images, but we want the text to fit directly under the
+    image as a description of that image. To create it so that one image floats left and one image
+    floats right we will create a class for each, so if we do need more images inserted in this
+    document we can quickly lay things out accordingly.
+*/
+
+/* class selectors */
+.left {
+  float:left;
+  margin: 0 10px 5px 0;
+}
+.right {
+  float:right;
+  margin: 0 0 10px 10px;
+}
+.horizontal {
+  width: 117px; /* based on width of image */
+  text-align: center;
+  font-size:.75em;
+}
+.vertical {
+  width: 61px; /* based on width of image */
+  text-align: center;
+  font-size:.75em;
+}
+

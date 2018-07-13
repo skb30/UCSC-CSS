@@ -1,0 +1,43 @@
+/*
+Add this basic CSS to this html document (be sure your page links to the external CSS page
+that you create):
+
+*/
+body {
+    background:#ffc;
+    font:.9em Verdana, Arial, sans-serif;
+}
+div {
+    width: 100px;
+    height: 100px;
+    border:1px solid #999;
+}
+#one {
+    background:pink;
+    position:absolute;
+    top:0;
+    right:0;
+    border:1px solid #999;
+    background-image: url(./gianna.jpg);
+}
+#two {
+    background:blue;
+    position:absolute;
+    top:0;
+    left:0;
+    background-image: url(./Ollie1.jpg);
+}
+#three {
+    background:green;
+    position:absolute;
+    bottom:0;
+    right:0;
+    background-image: url(./Diego.jpg);
+}
+#four {
+    background:orange;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background-image: url(./Jambo.jpg);
+}

@@ -1,0 +1,21 @@
+a[href$=".pdf"] {
+    padding: 0 20px 0 0;
+    background:url("images/attribicons/pdficon_small.gif")
+    no-repeat top right;
+
+}a[href$=".doc"] {
+    padding: 0 25px 0 0;
+    background:url("images/attribicons/MSWord_icon.gif")
+    no-repeat top right;
+
+}a[href^="mailto:"] {
+    padding: 0 25px 0 0;
+    background:url("images/attribicons/mini_icons2/mail.gif")
+    no-repeat top right;
+
+}a[href^="https:"] {
+    padding: 0 15px 0px 0;
+    background:url("images/attribicons/outboundlink.jpg")
+    no-repeat top right;
+
+}

@@ -33,7 +33,7 @@ h1 {
   background: #ffffff;
   color: #3372df;
   font-family: 'Open Sans', sans-serif, serif;
-  font-size:2.0em; /* using em's */
+  font-size:2.0em; /* using browser friendly em's */
   font-weight: 700; /* bold */
   font-style: italic;
   font-variant: small-caps;  /* using font-variant */
@@ -49,7 +49,7 @@ h3 {
 }
 p {
 	font-family: Papyrus, fantasy;
-	font-size:125%; /* using percentage */
+	font-size:125%; /* using percentage to make font bigger than 16px */
 
 	font-weight: lighter;
 }
